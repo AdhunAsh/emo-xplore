@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questionnaire</title>
+    <link rel="stylesheet" type="text/css" href="/static/css/quest.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Questionnaire</h1>
+        <div class="question">
+            <p>1.) How are you feeling today?</p>
+        </div>
+        <div class="options">
+            <div class="option" onclick="goToNextPage('one')">&#8226; HAPPINESS: Feeling joy, contentment, or pleasure.</div>
+            <div class="option" onclick="goToNextPage('two')">&#8226; SADNESS: Experiencing sorrow, grief, or disappointment.</div>
+            <div class="option" onclick="goToNextPage('three')">&#8226; ANGER: Feeling frustration, irritation, or rage.</div>
+            <div class="option" onclick="goToNextPage('four')">&#8226; LOVE: Romantic getaways.</div>
+            <div class="option" onclick="goToNextPage('five')">&#8226; 
+            Pilgrims and Museums.</div>
+        </div>
+    </div>
+    <script>
+        function goToNextPage(answer) {
+            // Redirect to the next page based on the selected answer
+            switch (answer) {
+                case 'one':
+                    window.location.href = 'happy.html';
+                    break;
+                case 'two':
+                    window.location.href = 'sad.html';
+                    break;
+                case 'three':
+                    window.location.href = 'anger.html';
+                    break;
+                case 'four':
+                    window.location.href = 'love.html';
+                    break;
+                case 'five':
+                    window.location.href = 'historical.html'
+                    break;
+                    // Handle default case
+            }
+        }
+    </script>
+</body>
+</html>

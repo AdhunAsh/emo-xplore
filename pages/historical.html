@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Historical</title>
+    <link rel="stylesheet" type="text/css" href="/static/css/quest.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Questionnaire</h1>
+        <div class="question">
+            <p>Historical places ?</p>
+        </div>
+        <div class="options">
+            <div class="option" onclick="goToNextPage('one')">&#8226; Pilgrims</div>
+            <div class="option" onclick="goToNextPage('two')">&#8226; Museums</div>
+        </div>
+    <script>
+        function goToNextPage(answer) {
+            // Redirect to the next page based on the selected answer
+            switch (answer) {
+                case 'one':
+                    window.location.href = 'pilgrims.html';
+                    break;
+                case 'two':
+                    window.location.href = 'museum.html';
+                    break;
+                // Handle default case
+            }
+        }
+    </script>
+</body>
+</html>

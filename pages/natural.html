@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questionnaire</title>
+    <link rel="stylesheet" type="text/css" href="/static/css/quest.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Questionnaire</h1>
+        <div class="question">
+            <p>Scenic natural landscapes ?</p>
+        </div>
+        <div class="options">
+            <div class="option" onclick="goToNextPage('one')">&#8226; Mountains</div>
+            <div class="option" onclick="goToNextPage('two')">&#8226; Canals , lakes , waterfalls ....</div>
+            <div class="option" onclick="goToNextPage('three')">&#8226; landscapes</div>
+        </div>
+    <script>
+        function goToNextPage(answer) {
+            // Redirect to the next page based on the selected answer
+            switch (answer) {
+                case 'one':
+                    window.location.href = 'mountain.html';
+                    break;
+                case 'two':
+                    window.location.href = 'lake.html';
+                    break;
+                case 'three':
+                    window.location.href = 'landscape.html';
+                    break;
+                // Handle default case
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: url('/static/image/home/back.png');;
+}
+
+.heading {
+  margin-left: 20px;
+  margin-bottom: 50px;
+  text-decoration: underline;
+}
+
+.container {
+  margin-left: 20px;
+  width: 1000px;
+}
+
+.item {
+  display: flex;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.image-container {
+  flex: 0 0 40%; /* Image container takes up 40% of the item width */
+}
+
+.image-container img {
+  max-width: 300px;
+  height: auto;
+  display: block;
+}
+
+.description {
+  margin-left: -95px;
+  flex: 0 0 60%; /* Description container takes up 60% of the item width */
+  padding: 50px;
+  background-color: #f0f0f0;
+  margin-top: -20px;
+}
+
+.description h2 {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.description p {
+  margin: 0;
+}
+
+.ratings {
+  margin-bottom: 10px;
+}
+
