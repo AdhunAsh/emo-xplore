@@ -1,6 +1,6 @@
 body {
     font-family:aloja;
-    background-image: url('/static/image/home/Untitled\ design.png');
+    background-image: url('../image/home/Untitled\ design.png');
 }
 .container {
     max-width: 600px;
